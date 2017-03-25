@@ -33,7 +33,6 @@ and overrides other features lol */
 }
 
 .welcome p {
-	padding-top: 1%;
 	padding-bottom: 4%;
 	display: inline-block;
 }
@@ -42,4 +41,8 @@ and overrides other features lol */
 	width: 70%;
 	display: inline-block;
 	margin-bottom: 3%;
+}
+
+.welcomeText3 {
+	margin-top: -2.5%;
 }
