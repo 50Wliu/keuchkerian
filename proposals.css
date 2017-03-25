@@ -1,11 +1,10 @@
 body
 {
-	margin: 0;
-	overflow-x: hidden;
+	margin: 0; /* Make the form take up the entire page */
+	overflow: hidden; /* Get rid of incorrect scrollbars */
 }
 
 #form
 {
-	width: 100vw;
-	height: 100vw;
+	border: 0; /* No border */
 }
