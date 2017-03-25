@@ -41,4 +41,5 @@ and overrides other features lol */
 .welcomePic1 img {
 	width: 70%;
 	display: inline-block;
+	margin-bottom: 3%;
 }
