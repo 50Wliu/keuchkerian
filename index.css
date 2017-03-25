@@ -46,4 +46,10 @@ html, body {
 .welcome p {
 	padding-top: 10%
 	padding-bottom: 10%;
+	display: inline-block;
+}
+
+.welcomePic1 img {
+	width: 50%;
+	display: inline-block;
 }
