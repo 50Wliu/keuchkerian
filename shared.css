@@ -2,6 +2,12 @@ nav {
 	border-radius: 0 !important; /* No border radius for cleaner look */
 }
 
+.navbar {
+	position: sticky;
+	top: 0; /* "Hack" to make sticky work */
+	z-index: 10; /* This should be the highest on the page */
+}
+
 .navbar-default .navbar-brand {
 	color: #496149 !important;
 }
