@@ -8,6 +8,10 @@ html, body {
 	width: 100%;
 }
 
+nav {
+	border-radius: 0 !important;
+}
+
 .herefordLogo {
 	display: inline-block;
 	position: relative;
@@ -44,6 +48,6 @@ html, body {
 }
 
 .welcome p {
-	padding-top: 10%
+	padding-top: 10%;
 	padding-bottom: 10%;
 }
