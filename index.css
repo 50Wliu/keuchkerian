@@ -8,9 +8,8 @@ html, body {
 	width: 100%;
 }
 
-.headerFun {
-	display: inline-block;
-	position: relative;
+nav {
+	border-radius: 0 !important;
 }
 
 .herefordLogo {
@@ -23,6 +22,12 @@ html, body {
 	position: relative;
 	display: inline-block;
 	margin-top: 15%;
+	margin: 5%;
+}
+
+.headerFun {
+	display: inline-block;
+	position: relative;
 }
 
 .headerFun h1 {
@@ -32,36 +37,7 @@ html, body {
 	font: Impact;
 	display: inline-block;
 	position: relative;
-	margin-left: 10%;
-}
-
-.nav {
-	background-color: rgba(255,255,255,0.5);
-	/* background-color: hsla(100, 50%, 25%, 1);
-	0.3 CONTROLS THE ALPHA
-	CHANNEL!!!!!!!! 
-	hsla(hue, saturation, lightness, alpha)
-	*/
-	margin: 0 auto;
-	padding-top: 0.1%;
-	padding-bottom: 0.1%;
-}
-
-.nav li {
-	display: inline-block;
-	padding-left: 5%;
-	padding-right: 5%;;
-}
-
-.nav ul {
-	list-style: none;
-	font-size: 20px;
-	font-family: 'Bree Serif', serif;
-	position: relative;
-}
-
-.nav a {
-	text-decoration: none;
+	margin-left: 5%;
 }
 
 .welcome {
@@ -72,6 +48,13 @@ html, body {
 }
 
 .welcome p {
-	padding-top: 10%
+	padding-top: 10%;
 	padding-bottom: 10%;
+	display: inline-block;
 }
+
+.welcomePic1 img {
+	width: 50%;
+	display: inline-block;
+}
+
