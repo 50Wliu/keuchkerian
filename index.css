@@ -11,26 +11,15 @@ html, body {
 .herefordLogo {
 	display: inline-block;
 	position: relative;
-	margin-left: 15%;
+	margin-left: 5%;
 }
 
 .herefordLogo img {
+	width: 80%;
 	position: relative;
 	display: inline-block;
 	margin-top: 15%;
 	margin: 5%;
-}
-
-.headerFun {
-	display: inline-block;
-	position: relative;
-}
-
-.headerFun img {
-	width: 60%;
-	display: inline-block;
-	position: relative;
-	margin-left: 5%;
 }
 
 /* !important means that it's important
