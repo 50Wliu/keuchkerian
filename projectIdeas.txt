@@ -1,0 +1,4 @@
+Potential Ideas: 
+
+Hereford event reminder app (https://developers.google.com/google-apps/calendar/overview)
+
