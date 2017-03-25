@@ -1,0 +1,7 @@
+nav {
+	border-radius: 0 !important; /* No border radius for cleaner look */
+}
+
+.navbar {
+	margin-bottom: 0; /* No bottom margin on navbar */
+}

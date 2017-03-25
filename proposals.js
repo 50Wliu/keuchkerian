@@ -10,6 +10,7 @@ function setFormSize()
 {
 	// Set the size of the form to the available window size
 	const form = document.getElementById('form');
-	form.style.height = window.innerHeight + 'px';
+	const height = window.innerHeight - parseInt(window.getComputedStyle(document.getElementById('navbar')).getPropertyValue('height'), 10);
+	form.style.height = height + 'px';
 	form.style.width = window.innerWidth + 'px';
 }

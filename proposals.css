@@ -6,5 +6,8 @@ body
 
 #form
 {
+	/* Don't show the form until we've computed its size */
+	height: 0;
+	width: 0;
 	border: 0; /* No border */
 }

@@ -8,10 +8,6 @@ html, body {
 	width: 100%;
 }
 
-nav {
-	border-radius: 0 !important;
-}
-
 .herefordLogo {
 	display: inline-block;
 	position: relative;
@@ -57,4 +53,3 @@ nav {
 	width: 70%;
 	display: inline-block;
 }
-
