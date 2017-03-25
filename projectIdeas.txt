@@ -3,7 +3,7 @@ Potential Ideas:
 Hereford event reminder app (https://developers.google.com/google-apps/calendar/overview)
 
 HSS Stuff:
-  Proposal Form
+  Proposal Form - embedded Google Form
   Things to be discussed next meeting
   Senators
-
+  Minutes (that open in new page)
