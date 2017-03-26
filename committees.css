@@ -22,6 +22,10 @@ h3:first-of-type {
 	margin-top: 0px;
 }
 
+hr {
+	border-color: #053319;
+}
+
 .welcome {
 	background-color: rgba(255,255,255,0.5);
 	padding: 5% 5% 5% 5%;
