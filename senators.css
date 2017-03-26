@@ -1,0 +1,23 @@
+html, body {
+	background-image: url("images/gloriousRunk.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+}
+
+.herefordLogo {
+	display: inline-block;
+	position: relative;
+	margin-left: 5%;
+}
+
+.herefordLogo img {
+	width: 60%;
+	position: relative;
+	display: inline-block;
+	margin-top: 15%;
+	margin: 5%;
+}
+

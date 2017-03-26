@@ -10,7 +10,7 @@ $(window).scroll(function() {
 	var breakpoint = 100;
 
 	if ($(window).scrollTop() >= breakpoint){
-		$('.welcomePic1 img').css('visibility',
+		$('.carousel-inner').css('visibility',
 			'visible').hide().fadeIn(1500);
 		// 1500 = 1.5 seconds
 

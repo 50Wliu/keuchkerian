@@ -46,3 +46,7 @@ and overrides other features lol */
 	margin-bottom: 2%;
 	/* visibility: hidden; */
 }
+
+.carousel-inner {
+	visibility: hidden;
+}
