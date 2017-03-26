@@ -12,9 +12,6 @@
 	margin: 5%;
 }
 
-/* !important means that it's important
-and overrides other features lol */
-
 .welcome p {
 	margin-bottom: 2%;
 	display: inline-block;
