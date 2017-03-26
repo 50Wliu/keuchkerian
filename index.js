@@ -1,6 +1,8 @@
 // index.js
 
-$(window).scroll(function() {
+$(window).scroll(test);
+
+function test() {
 	console.log($(window).scrollTop());
 
 	var breakpoint = 80;
@@ -13,8 +15,8 @@ $(window).scroll(function() {
 		// make this only run once; cause scroll is once
 		$(this).off('scroll');
 	}
-})
+}
 
-$('#myCollapsible').on('hidden.bs.collapse', function () {
-  console.log("hello world");
-})
+// $('#myCollapsible').on('hidden.bs.collapse', function () {
+//   console.log("hello world");
+// })
