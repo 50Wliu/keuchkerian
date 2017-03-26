@@ -16,3 +16,12 @@ h3 {
 	content: " \2718";
 	color: red;
 }
+
+.past-proposal p:nth-of-type(2n + 1) {
+	display: inline;
+}
+
+.past-proposal p:nth-of-type(2n) {
+	display: none;
+	margin: 0;
+}

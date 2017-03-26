@@ -1,20 +1,36 @@
-// window.onload = () => {
-// 	setFormSize();
-// }
+window.onload = () => {
+	const pastProposals = document.getElementsByClassName('past-proposal');
+	for(const pastProposal of pastProposals) {
+		let i = 0;
+		for(const element of pastProposal.getElementsByTagName('p')) {
+			let toggleElement = document.createElement("a")
+			toggleElement.setAttribute("href", "#");
+			toggleElement.setAttribute("onclick", i % 2 ? "collapse();" : "expand();");
 
-// window.onresize = () => {
-// 	setFormSize();
-// }
+			if(i % 2) {
+				toggleElement.appendChild(document.createTextNode("less..."));
+				toggleElement.style.display = "none";
+			}
+			else {
+				toggleElement.appendChild(document.createTextNode("more..."));
+			}
 
-// function setFormSize()
-// {
-// 	// Set the size of the form to the available window size
-// 	const form = document.getElementById('form');
-// 	// .slice(0, -2) gets rid of the trailing "px"
-// 	const navbarHeight = Number(window.getComputedStyle(document.getElementsByTagName('nav')[0]).getPropertyValue('height').slice(0, -2));
-// 	const footerHeight = Number(window.getComputedStyle(document.getElementsByTagName('footer')[0]).getPropertyValue('height').slice(0, -2));
-// 	console.log(navbarHeight, footerHeight, window.innerHeight - navbarHeight - footerHeight);
-// 	const height = window.innerHeight - navbarHeight - footerHeight;
-// 	form.style.height = height + 'px';
-	// form.style.width = window.innerWidth + 'px';
-//}
+			pastProposal.insertBefore(toggleElement, element.nextElementSibling);
+			i++;
+		}
+	}
+}
+
+function expand() {
+	const activeElement = document.activeElement;
+	activeElement.style.display = "none"; // a (more...)
+	activeElement.nextElementSibling.style.display = "block"; // p (details)
+	activeElement.nextElementSibling.nextElementSibling.style.display = "block"; // a (less...)
+}
+
+function collapse() {
+	const activeElement = document.activeElement;
+	activeElement.style.display = "none"; // a (less...)
+	activeElement.previousElementSibling.style.display = "none"; // p (details)
+	activeElement.previousElementSibling.previousElementSibling.style.display = "inline"; // a (more...)
+}
