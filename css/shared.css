@@ -58,13 +58,10 @@ footer {
 	color: inherit;
 }
 
-.puns {
+.navbar-default .navbar-text {
 	text-align: center;
-	color: #496149 !important;
+	color: #496149;
 	font-family: 'Shadows Into Light', cursive;
-	/*<!--if the search bar comes back...-->
-	width: 20%*/
-	width: auto;
 	cursor: default;
 }
 
