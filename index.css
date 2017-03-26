@@ -1,5 +1,5 @@
 html, body {
-	margin-bottom: 20%;
+	margin-bottom: 8%;
 	background-image: url("gloriousRunk.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -27,7 +27,7 @@ and overrides other features lol */
 
 .welcome {
 	background-color: rgba(255,255,255,0.5);
-	padding: 5% 5% 5% 5%;
+	padding: 5% 5% 0 5%;
 	margin-left: 10%;
 	margin-right: 13%;
 }
@@ -35,10 +35,11 @@ and overrides other features lol */
 .welcome p {
 	padding-bottom: 4%;
 	display: inline-block;
+	font-size: 16px;
 }
 
 .welcomePic1 img {
-	width: 70%;
+	width: 100%;
 	display: inline-block;
 	margin-bottom: 3%;
 }
