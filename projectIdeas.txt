@@ -7,3 +7,13 @@ HSS Stuff:
   Minutes (that open in new page)
 
 Hereford event reminder app (https://developers.google.com/google-apps/calendar/overview)
+
+
+NEW STUFF:
+calendar with list, descriptions
+
+text file with info
+senators and their committees
+exec descriptions
+
+proposals for next meeting
