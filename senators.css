@@ -22,6 +22,9 @@ td { /* styles cells */
 	/* ^^^ ADD IN THE END */
 }
 
+.demo {
+	width: 50%;
+}
 
 /*@media (min-width: 900px) {
 	p {
