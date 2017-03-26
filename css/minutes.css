@@ -6,3 +6,7 @@ iframe {
   height: 75vh;
   width: 100%;
 }
+
+footer {
+    position: relative;
+}
