@@ -1,4 +1,23 @@
 window.onload = () => {
+	const contentArea = document.getElementsByClassName('welcome')[0];
+	let i = 0;
+	for(const element of contentArea.getElementsByTagName('p')) {
+		let toggleElement = document.createElement("a")
+		toggleElement.setAttribute("href", "#");
+		toggleElement.setAttribute("onclick", i % 2 ? "collapse();" : "expand();");
+
+		if(i % 2) {
+			toggleElement.appendChild(document.createTextNode("less..."));
+			toggleElement.style.display = "none";
+		}
+		else {
+			toggleElement.appendChild(document.createTextNode("more..."));
+		}
+
+		contentArea.insertBefore(toggleElement, element.nextElementSibling);
+		i++;
+	}
+
 	for(const element of document.getElementsByClassName('time')) {
 		const time = moment(element.innerText, "MMMM-Do-YYYY hh a");
 		element.innerText += " (" + moment().to(time) + ")";

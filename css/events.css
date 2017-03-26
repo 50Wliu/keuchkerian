@@ -33,10 +33,6 @@ h3:first-of-type {
 	text-decoration: inherit;
 }
 
-.welcome a:nth-of-type(2n) {
-	display: none;
-}
-
 #calendar {
 	border: 0;
 }
