@@ -47,4 +47,10 @@ footer {
 .love {
 	padding-top: 20px;
 	font-family: 'Delius Unicase', cursive;
+	color: inherit;
+}
+
+.love:hover, .love:focus {
+	color: inherit;
+	text-decoration: inherit;
 }
