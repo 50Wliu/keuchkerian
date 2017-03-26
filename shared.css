@@ -27,3 +27,8 @@ nav {
 .navbar {
 	margin-bottom: 0; /* No bottom margin on navbar */
 }
+
+.tab {
+	display: inline-block;
+	width: 5%;
+}
