@@ -1,5 +1,5 @@
 html, body {
-	background-image: url("images/gloriousRunk.jpg");
+	background-image: url("../images/gloriousRunk.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
@@ -20,4 +20,3 @@ html, body {
 	margin-top: 15%;
 	margin: 5%;
 }
-
