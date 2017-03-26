@@ -54,9 +54,9 @@ footer {
 }
 
 .puns {
-	padding-left: 5%;
+	text-align: center;
 	color: grey;
 	font-family: 'Shadows Into Light', cursive;
-	max-width: 25%;
+	width: 25%;
 	cursor: default;
 }
