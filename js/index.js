@@ -4,7 +4,6 @@ $(window).scroll(function() {
 	// right now this is an anonymous function
 	// because it's within "scroll" it's
 	// automatically gonna get called
-	console.log($(window).scrollTop());
 
 	// create a variable called breakpoint
 	var breakpoint = 100;
