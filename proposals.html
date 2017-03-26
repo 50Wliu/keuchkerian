@@ -75,11 +75,11 @@
 			        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdcksRsQCEzzLJdCAkvQxnA2l-9m1YLpFpAKOjoS9PXqtiXUw/viewform?embedded=true">Loading...</iframe> -->
 					<form onsubmit="alert('Thank you for submitting your proposal. It will not be reviewed.');">
 						<div class="form-group">
-						  <label for="event-title">Event Title</label>
+						  <label for="event-title" class="required">Event Title</label>
 						  <input class="form-control" id="event-title" autofocus required></input>
 						</div>
 						<div class="form-group">
-						  <label for="planners">Persons/RAs/Committees Involved in Planning</label>
+						  <label for="planners" class="required">Persons/RAs/Committees Involved in Planning</label>
 						  <input class="form-control" id="planners" required></input>
 						</div>
 						<div class="form-group">
@@ -91,25 +91,26 @@
 						  <input class="form-control" id="date-time" type="datetime-local"></input>
 						</div>
 						<div class="form-group">
-						  <label for="proposal-details">Proposal Details</label>
+						  <label for="proposal-details" class="required">Proposal Details</label>
 						  <input class="form-control" id="proposal-details" placeholder="General plan of activity" required></input>
 						</div>
 						<div class="form-group">
-						  <label for="why-fund">Why should HSS fund your proposal? How does this fall within Hereford’s initiatives?</label>
+						  <label for="why-fund" class="required">Why should HSS fund your proposal? How does this fall within Hereford’s initiatives?</label>
 						  <textarea class="form-control" id="why-fund" required></textarea>
 						</div>
 						<div class="form-group">
-						  <label for="amount-requesting">Amount Requesting</label>
+						  <label for="amount-requesting" class="required">Amount Requesting</label>
 						  <input class="form-control" id="amount-requesting" placeholder="$ estimate" required></input>
 						</div>
 						<div class="form-group">
-						  <label for="itemized-costs">Please Itemize Costs</label>
+						  <label for="itemized-costs" class="required">Please Itemize Costs</label>
 						  <textarea class="form-control" id="itemized-costs" placeholder="Provide costs here" required></textarea>
 						</div>
 						<div class="form-group">
-						  <label for="attendance">Expected Attendance</label>
+						  <label for="attendance" class="required">Expected Attendance</label>
 						  <input class="form-control" id="attendance" type="number" min="1" placeholder="Estimated attendees" required></input>
 						</div>
+						<p><span class="required-asterisk">*</span> Required</p>
 						<button type="submit" class="btn btn-primary">Submit</button>
 					</form>
 			      </div>
