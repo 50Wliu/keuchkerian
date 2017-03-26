@@ -58,4 +58,5 @@ footer {
 	color: grey;
 	font-family: 'Shadows Into Light', cursive;
 	max-width: 25%;
+	cursor: default;
 }
