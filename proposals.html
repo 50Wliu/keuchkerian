@@ -59,7 +59,7 @@
 			<p><i>Yo. Submit stuff.</i></p>
 		</div>
 
-		<div class="panel-group welcome">
+		<div class="welcome">
 			<div class="panel-group welcome" id="accordion" role="tablist" aria-multiselectable="true">
 			  <div class="panel panel-default">
 			    <div class="panel-heading" role="tab" id="submit">
@@ -72,42 +72,42 @@
 			    <div id="collapseSubmit" class="panel-collapse collapse" role="tabpanel" aria-labelledby="submit">
 			      <div class="panel-body">
 			        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdcksRsQCEzzLJdCAkvQxnA2l-9m1YLpFpAKOjoS9PXqtiXUw/viewform?embedded=true">Loading...</iframe> -->
-					<form class="welcome">
+					<form class="welcome" onsubmit="alert('Thank you for submitting your proposal. It will not be reviewed.');">
 						<div class="form-group">
 						  <label for="event-title">Event Title</label>
-						  <textarea class="form-control" id="event-title" placeholder="event title"></textarea>
+						  <input class="form-control" id="event-title"></input>
 						</div>
 						<div class="form-group">
 						  <label for="planners">Persons/RAs/Committees Involved in Planning</label>
-						  <textarea class="form-control" id="planners" placeholder="planners"></textarea>
+						  <input class="form-control" id="planners"></input>
 						</div>
 						<div class="form-group">
 						  <label for="location">Location</label>
-						  <textarea class="form-control" id="location" placeholder="specify rainsite if applicable"></textarea>
+						  <input class="form-control" id="location" placeholder="Specify rainsite if applicable"></input>
 						</div>
 						<div class="form-group">
 						  <label for="date-time">Date and Time</label>
-						  <textarea class="form-control" id="date-time" placeholder="MM-DD-YYYY HH:MM"></textarea>
+						  <input class="form-control" id="date-time" placeholder="MM-DD-YYYY HH:MM"></input>
 						</div>
 						<div class="form-group">
 						  <label for="proposal-details">Proposal Details</label>
-						  <textarea class="form-control" id="proposal-details" placeholder="general pan of activity"></textarea>
+						  <input class="form-control" id="proposal-details" placeholder="General plan of activity"></input>
 						</div>
 						<div class="form-group">
 						  <label for="why-fund">Why should HSS fund your proposal? How does this fall within Hereford’s initiatives?</label>
-						  <textarea class="form-control" id="why-fund" placeholder="provide explanation here"></textarea>
+						  <textarea class="form-control" id="why-fund"></textarea>
 						</div>
 						<div class="form-group">
 						  <label for="amount-requesting">Amount Requesting</label>
-						  <textarea class="form-control" id="amount-requesting" placeholder="$ estimate"></textarea>
+						  <input class="form-control" id="amount-requesting" placeholder="$ estimate"></input>
 						</div>
 						<div class="form-group">
 						  <label for="itemized-costs">Please Itemize Costs</label>
-						  <textarea class="form-control" id="itemized-costs" placeholder="provide costs here"></textarea>
+						  <textarea class="form-control" id="itemized-costs" placeholder="Provide costs here"></textarea>
 						</div>
 						<div class="form-group">
 						  <label for="attendance">Expected Attendance</label>
-						  <textarea class="form-control" id="attendance" placeholder="estimated attendees"></textarea>
+						  <input class="form-control" id="attendance" placeholder="Estimated attendees"></input>
 						</div>
 						<button type="submit" class="btn btn-primary">Submit</button>
 					</form>
