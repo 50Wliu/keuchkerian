@@ -17,6 +17,9 @@
 		<link rel="stylesheet" type="text/css" href="footer.css">
 		<link rel="stylesheet" type="text/css" href="puns.css">
 		<link href="https://fonts.googleapis.com/css?family=Delius+Unicase" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+
 	</head>
 
 	<body>
@@ -39,9 +42,18 @@
 						<li class="active"><a href="senators.html">Senators<span class="sr-only"> (current)</span></a></li>
 						<li><a href="proposals.html">Proposals</a></li>
 					</ul>
-					<div class="puns">
+					<div class="puns navbar-left navbar-text">
 						<p>
-							socks
+							<script>
+							$(document).ready(function()
+							{
+							  var text = ["Renewable energy? I'm a big fan","Keep an even kale","Herb your enthusiasm","Q: Why did the leaf go to the doctor? A: Because it was feeling green"];
+							  var x = Math.floor((Math.random()*4));
+							  $('#myTxt').html(text[x]);
+
+							});
+							</script>
+							<span id="myTxt"></span>
 						</p>
 					</div>
 					<form class="navbar-form navbar-right">
