@@ -107,3 +107,7 @@ h3:first-of-type {
 hr {
 	border-color: #053319;
 }
+
+iframe {
+	border: 0;
+}

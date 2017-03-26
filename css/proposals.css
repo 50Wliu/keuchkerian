@@ -1,17 +1,4 @@
-body
-{
-	margin: 0; /* Make the form take up the entire page */
-}
-
 iframe {
 	width: 100%;
 	height: 500px;
-}
-
-#form
-{
-	/* Don't show the form until we've computed its size */
-/*	height: 0;
-	width: 0;*/
-	border: 0; /* No border */
 }
