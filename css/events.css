@@ -6,7 +6,3 @@
 	display: none;
 	margin: 0;
 }
-
-.welcome a:hover, a:focus {
-	text-decoration: inherit;
-}

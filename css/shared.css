@@ -59,7 +59,6 @@ footer {
 
 .love:hover, .love:focus {
 	color: inherit;
-	text-decoration: inherit;
 }
 
 .puns {
@@ -106,6 +105,10 @@ h3:first-of-type {
 
 hr {
 	border-color: #053319;
+}
+
+a:hover, a:focus {
+	text-decoration: inherit;
 }
 
 iframe {
