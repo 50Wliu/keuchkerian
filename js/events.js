@@ -1,21 +1,23 @@
 window.onload = () => {
-	const contentArea = document.getElementsByClassName('welcome')[0];
-	let i = 0;
-	for(const element of contentArea.getElementsByTagName('p')) {
-		let toggleElement = document.createElement("a")
-		toggleElement.setAttribute("href", "#");
-		toggleElement.setAttribute("onclick", i % 2 ? "collapse();" : "expand();");
+	const events = document.getElementsByClassName('event');
+	for(const event of events) {
+		let i = 0;
+		for(const element of event.getElementsByTagName('p')) {
+			let toggleElement = document.createElement("a")
+			toggleElement.setAttribute("href", "#");
+			toggleElement.setAttribute("onclick", i % 2 ? "collapse();" : "expand();");
 
-		if(i % 2) {
-			toggleElement.appendChild(document.createTextNode("less..."));
-			toggleElement.style.display = "none";
-		}
-		else {
-			toggleElement.appendChild(document.createTextNode("more..."));
-		}
+			if(i % 2) {
+				toggleElement.appendChild(document.createTextNode("less..."));
+				toggleElement.style.display = "none";
+			}
+			else {
+				toggleElement.appendChild(document.createTextNode("more..."));
+			}
 
-		contentArea.insertBefore(toggleElement, element.nextElementSibling);
-		i++;
+			event.insertBefore(toggleElement, element.nextElementSibling);
+			i++;
+		}
 	}
 
 	for(const element of document.getElementsByClassName('time')) {

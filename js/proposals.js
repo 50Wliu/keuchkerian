@@ -1,8 +1,8 @@
 window.onload = () => {
-	const pastProposals = document.getElementsByClassName('past-proposal');
-	for(const pastProposal of pastProposals) {
+	const proposals = document.getElementsByClassName('proposal');
+	for(const proposal of proposals) {
 		let i = 0;
-		for(const element of pastProposal.getElementsByTagName('p')) {
+		for(const element of proposal.getElementsByTagName('p')) {
 			let toggleElement = document.createElement("a")
 			toggleElement.setAttribute("href", "#");
 			toggleElement.setAttribute("onclick", i % 2 ? "collapse();" : "expand();");
@@ -15,7 +15,7 @@ window.onload = () => {
 				toggleElement.appendChild(document.createTextNode("more..."));
 			}
 
-			pastProposal.insertBefore(toggleElement, element.nextElementSibling);
+			proposal.insertBefore(toggleElement, element.nextElementSibling);
 			i++;
 		}
 	}
