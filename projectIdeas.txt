@@ -1,19 +1,9 @@
-Potential Ideas: 
-
-HSS Stuff:
-  Proposal Form - embedded Google Form
-  Things to be discussed next meeting
-  Senators
-  Minutes (that open in new page)
-
-Hereford event reminder app (https://developers.google.com/google-apps/calendar/overview)
-
-
-NEW STUFF:
-calendar with list, descriptions
-
-text file with info
-senators and their committees
-exec descriptions
-
-proposals for next meeting
+TODO:
+* Move off GitHub Pages to web server
+* Read from file
+* Convert proposal Google from to HTML form
+* Automatically update
+    * Submit proposal -> appears on pending proposals list
+    * Deal with proposal -> appears on past proposals list
+    * Approve proposal -> appears on events page (if applicable)
+* Past proposal styles (approved, denied, format, etc)

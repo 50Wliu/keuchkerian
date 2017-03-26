@@ -20,7 +20,12 @@ window.onload = () => {
 
 	for(const element of document.getElementsByClassName('time')) {
 		const time = moment(element.innerText, "MMMM-Do-YYYY hh a");
-		element.innerText += " (" + moment().to(time) + ")";
+		if(moment().diff(time, 'hours') >= -1 && moment().diff(time, 'hours') <= 0) {
+			element.innerText += " (Happening right now!)";
+		}
+		else {
+			element.innerText += " (" + moment().to(time) + ")";
+		}
 	}
 }
 
