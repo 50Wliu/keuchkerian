@@ -1,3 +1,32 @@
-iframe {
-	margin-left: 13%;
+h3 {
+	cursor: pointer;
+}
+
+h3 .glyphicon-chevron-right {
+	display: none;
+}
+
+h3 .glyphicon-chevron-down {
+	display: inline;
+}
+
+h3.collapsed .glyphicon-chevron-right {
+	display: inline;
+}
+
+h3.collapsed .glyphicon-chevron-down {
+	display: none;
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+	border-color: #053319;
+}
+
+.table-hover > tbody > tr:hover {
+	background-color: #96AE96;
 }
