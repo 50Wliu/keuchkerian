@@ -4,3 +4,7 @@ $(document).ready(function()
 	var x = Math.floor((Math.random()*4));
 	$('#myTxt').html(text[x]);
 });
+
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip()
+})

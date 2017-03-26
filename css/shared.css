@@ -24,7 +24,7 @@ nav {
 	color: #304830 !important;
 }
 
-.navbar {
+.navbar, .navbar-text {
 	margin-bottom: 0; /* No bottom margin on navbar */
 }
 
@@ -58,4 +58,5 @@ footer {
 	color: grey;
 	font-family: 'Shadows Into Light', cursive;
 	max-width: 25%;
+	cursor: default;
 }

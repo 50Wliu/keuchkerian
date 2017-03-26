@@ -1,5 +1,5 @@
 html, body {
-	background-image: url("images/gloriousRunk.jpg");
+	background-image: url("../images/gloriousRunk.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
@@ -45,4 +45,8 @@ and overrides other features lol */
 	display: inline-block;
 	margin-bottom: 2%;
 	/* visibility: hidden; */
+}
+
+.carousel-inner {
+	visibility: hidden;
 }
