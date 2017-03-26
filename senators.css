@@ -4,44 +4,23 @@
 }
 
 */
-
-.senTable {
-	background-color: rgba(255,255,255,0.5);
+table {
+	margin-left: 10%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	border: none;
+	width: 80%;
 }
 
-ul {
-	padding: 10px 10px 10px 10px;
-	background: rgba(10,10,50,0.75);
-	width: 100%;
+td { /* styles cells */
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	/* border: none; */
+	/* ^^^ ADD IN THE END */
 }
 
-li {
-	display: inline;
-	padding: 0 15px 0 10px;
-	color: #0033cc;
-}
-
-a:active {
-	color:none;
-}
-
-table, th, td {
-	border: 1px;
-	border-color: rgba(0,0,0,0.5);
-	color: white;
-	padding: 0 0 0 20px;
-	background: rgba(10,10,50,0.75);
-}
-
-p {
-	color: white;
-	font-size: 20px;
-	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
-	background: rgba(10,10,50,0.75);
-	padding: 20px 50px 20px 10px;
-	margin: auto;
-}
 
 /*@media (min-width: 900px) {
 	p {
@@ -51,13 +30,7 @@ p {
 }
 */
 
-	td.tableSpacing { /*this is the function tableSpacing to be called by td tags*/
-		padding-bottom: 3%;
-		padding-top: 3%;
-	}
-
-	td.titleCellSpacing {
-		border: 1px;
-		border-color: white;
-		/* why is this not working help */
-	}
+/*.tableSpacing { this is the function tableSpacing to be called by td tags
+		padding-bottom: 53%;
+		padding-top: 53%;
+}*/
