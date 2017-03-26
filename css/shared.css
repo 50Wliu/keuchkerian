@@ -54,8 +54,8 @@ footer {
 }
 
 .puns {
-	text-align: center !important;
-	color: grey;
+	text-align: center;
+	color: #496149 !important;
 	font-family: 'Shadows Into Light', cursive;
 	/*<!--if the search bar comes back...-->
 	width: 20%*/
