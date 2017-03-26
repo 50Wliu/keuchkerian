@@ -6,3 +6,13 @@ iframe {
 h3 {
 	margin-bottom: 0;
 }
+
+.approved::after {
+	content: " \2714";
+	color: green;
+}
+
+.rejected::after {
+	content: " \2718";
+	color: red;
+}
