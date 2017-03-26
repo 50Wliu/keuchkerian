@@ -7,6 +7,15 @@ h3 {
 	margin-bottom: 0;
 }
 
+.required::after {
+	content: " *";
+	color: red;
+}
+
+.required-asterisk {
+	color: red;
+}
+
 .approved::after {
 	content: " \2714";
 	color: green;

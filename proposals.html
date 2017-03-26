@@ -59,8 +59,8 @@
 			<p><i>Yo. Submit stuff.</i></p>
 		</div>
 
-		<div class="panel-group welcome">
-			<div class="panel-group welcome" id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="welcome">
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 			  <div class="panel panel-default">
 			    <div class="panel-heading" role="tab" id="submit">
 			      <h4 class="panel-title">
@@ -71,44 +71,46 @@
 			    </div>
 			    <div id="collapseSubmit" class="panel-collapse collapse" role="tabpanel" aria-labelledby="submit">
 			      <div class="panel-body">
+			        <!-- Google Form -->
 			        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdcksRsQCEzzLJdCAkvQxnA2l-9m1YLpFpAKOjoS9PXqtiXUw/viewform?embedded=true">Loading...</iframe> -->
-					<form>
+					<form onsubmit="alert('Thank you for submitting your proposal. It will not be reviewed.');">
 						<div class="form-group">
-						  <label for="event-title">Event Title</label>
-						  <textarea class="form-control" id="event-title" placeholder="event title"></textarea>
+						  <label for="event-title" class="required">Event Title</label>
+						  <input class="form-control" id="event-title" autofocus required></input>
 						</div>
 						<div class="form-group">
-						  <label for="planners">Persons/RAs/Committees Involved in Planning</label>
-						  <textarea class="form-control" id="planners" placeholder="planners"></textarea>
+						  <label for="planners" class="required">Persons/RAs/Committees Involved in Planning</label>
+						  <input class="form-control" id="planners" required></input>
 						</div>
 						<div class="form-group">
 						  <label for="location">Location</label>
-						  <textarea class="form-control" id="location" placeholder="specify rainsite if applicable"></textarea>
+						  <input class="form-control" id="location" placeholder="Specify rainsite if applicable"></input>
 						</div>
 						<div class="form-group">
 						  <label for="date-time">Date and Time</label>
-						  <textarea class="form-control" id="date-time" placeholder="MM-DD-YYYY HH:MM"></textarea>
+						  <input class="form-control" id="date-time" type="datetime-local"></input>
 						</div>
 						<div class="form-group">
-						  <label for="proposal-details">Proposal Details</label>
-						  <textarea class="form-control" id="proposal-details" placeholder="general pan of activity"></textarea>
+						  <label for="proposal-details" class="required">Proposal Details</label>
+						  <input class="form-control" id="proposal-details" placeholder="General plan of activity" required></input>
 						</div>
 						<div class="form-group">
-						  <label for="why-fund">Why should HSS fund your proposal? How does this fall within Hereford’s initiatives?</label>
-						  <textarea class="form-control" id="why-fund" placeholder="provide explanation here"></textarea>
+						  <label for="why-fund" class="required">Why should HSS fund your proposal? How does this fall within Hereford’s initiatives?</label>
+						  <textarea class="form-control" id="why-fund" required></textarea>
 						</div>
 						<div class="form-group">
-						  <label for="amount-requesting">Amount Requesting</label>
-						  <textarea class="form-control" id="amount-requesting" placeholder="$ estimate"></textarea>
+						  <label for="amount-requesting" class="required">Amount Requesting</label>
+						  <input class="form-control" id="amount-requesting" placeholder="$ estimate" required></input>
 						</div>
 						<div class="form-group">
-						  <label for="itemized-costs">Please Itemize Costs</label>
-						  <textarea class="form-control" id="itemized-costs" placeholder="provide costs here"></textarea>
+						  <label for="itemized-costs" class="required">Please Itemize Costs</label>
+						  <textarea class="form-control" id="itemized-costs" placeholder="Provide costs here" type="number" min="0" step="0.01" max="2500" required></textarea>
 						</div>
 						<div class="form-group">
-						  <label for="attendance">Expected Attendance</label>
-						  <textarea class="form-control" id="attendance" placeholder="estimated attendees"></textarea>
+						  <label for="attendance" class="required">Expected Attendance</label>
+						  <input class="form-control" id="attendance" type="number" min="1" placeholder="Estimated attendees" required></input>
 						</div>
+						<p><span class="required-asterisk">*</span> Required</p>
 						<button type="submit" class="btn btn-primary">Submit</button>
 					</form>
 			      </div>

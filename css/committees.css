@@ -1,0 +1,33 @@
+
+h1 {
+	display: inline-block;
+	padding: 1% 0;
+	margin: 1% 0 1% 20%;
+}
+
+.explanation {
+	margin-left: 0;
+	display: none;
+}
+
+h1:last-of-type {
+	margin-left: 0;
+}
+
+.commitTEE:hover .explanation {
+	display: inline;
+}
+
+.commitTEE:hover .shirt {
+	display: none;
+}
+
+.shirt img{
+	width: 8%;
+}
+
+.shirt {
+	display: inline;
+	position: relative;
+	margin-left: 0
+}
