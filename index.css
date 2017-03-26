@@ -8,11 +8,11 @@ html, body {
 	width: 100%;
 }
 
-.herefordLogo {
+/*.herefordLogo {
 	display: inline-block;
 	position: relative;
 	margin-left: 5%;
-}
+}*/
 
 .herefordLogo img {
 	width: 80%;
@@ -45,5 +45,5 @@ and overrides other features lol */
 	width: 100%;
 	display: inline-block;
 	margin-bottom: 2%;
-	visibility: hidden;
+	/* visibility: hidden; */
 }
