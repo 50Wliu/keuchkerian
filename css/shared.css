@@ -52,6 +52,11 @@ footer {
 	padding: 1%;
 }
 
+.footer-right {
+	float: right;
+	margin-top: -0.5%
+}
+
 .love {
 	font-family: 'Delius Unicase', cursive;
 	color: inherit;
