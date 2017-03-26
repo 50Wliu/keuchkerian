@@ -1,27 +1,24 @@
-nav {
-	border-radius: 0 !important; /* No border radius for cleaner look */
-}
-
 .navbar {
 	position: sticky;
 	top: 0; /* "Hack" to make sticky work */
 	z-index: 10; /* This should be the highest on the page */
+	border-radius: 0; /* No border radius for cleaner look */
 }
 
 .navbar-default .navbar-brand {
-	color: #496149 !important;
+	color: #496149;
 }
 
 .navbar-default .navbar-brand:hover {
-	color: #304830 !important;
+	color: #304830;
 }
 
 .navbar-default .navbar-nav > li > a {
-	color: #496149 !important;
+	color: #496149;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-	color: #304830 !important;
+	color: #304830;
 }
 
 .navbar, .navbar-text {
