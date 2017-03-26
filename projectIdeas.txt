@@ -1,9 +1,7 @@
 TODO:
 * Move off GitHub Pages to web server
 * Read from file
-* Convert proposal Google from to HTML form
 * Automatically update
     * Submit proposal -> appears on pending proposals list
     * Deal with proposal -> appears on past proposals list
     * Approve proposal -> appears on events page (if applicable)
-* Past proposal styles (approved, denied, format, etc)
