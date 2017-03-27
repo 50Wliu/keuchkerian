@@ -1,4 +1,5 @@
 TODO:
+* Biographies
 * Move off GitHub Pages to web server
 * Read from file
 * Automatically update
