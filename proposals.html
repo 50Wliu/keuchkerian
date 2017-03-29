@@ -76,39 +76,39 @@
 							<form onsubmit="alert('Thank you for submitting your proposal. It will not be reviewed.');">
 								<div class="form-group">
 									<label for="event-title" class="required">Event Title</label>
-									<input class="form-control" id="event-title" autofocus required>
+									<input class="form-control" id="event-title" name="title" autofocus required>
 								</div>
 								<div class="form-group">
 									<label for="planners" class="required">Persons/RAs/Committees Involved in Planning</label>
-									<input class="form-control" id="planners" required>
+									<input class="form-control" id="planners" name="planners" required>
 								</div>
 								<div class="form-group">
 									<label for="location">Location</label>
-									<input class="form-control" id="location" placeholder="Specify rainsite if applicable">
+									<input class="form-control" id="location" name="location" placeholder="Specify rainsite if applicable">
 								</div>
 								<div class="form-group">
 									<label for="date-time">Date and Time</label>
-									<input class="form-control" id="date-time" type="datetime-local">
+									<input class="form-control" id="date-time" name="time" type="datetime-local">
 								</div>
 								<div class="form-group">
 									<label for="proposal-details" class="required">Proposal Details</label>
-									<input class="form-control" id="proposal-details" placeholder="General plan of activity" required>
+									<input class="form-control" id="proposal-details" name="details" placeholder="General plan of activity" required>
 								</div>
 								<div class="form-group">
 									<label for="why-fund" class="required">Why should HSS fund your proposal? How does this fall within Hereford’s initiatives?</label>
-									<textarea class="form-control" id="why-fund" required></textarea>
+									<textarea class="form-control" id="why-fund" name="reason" required></textarea>
 								</div>
 								<div class="form-group">
 									<label for="amount-requesting" class="required">Amount Requesting</label>
-									<input class="form-control" id="amount-requesting" placeholder="$ estimate" required>
+									<input class="form-control" id="amount-requesting" name="amount" placeholder="$ estimate" required>
 								</div>
 								<div class="form-group">
 									<label for="itemized-costs" class="required">Please Itemize Costs</label>
-									<textarea class="form-control" id="itemized-costs" placeholder="Provide costs here" type="number" min="0" step="0.01" max="2500" required></textarea>
+									<textarea class="form-control" id="itemized-costs" name="costs" placeholder="Provide costs here" type="number" min="0" step="0.01" max="2500" required></textarea>
 								</div>
 								<div class="form-group">
 									<label for="attendance" class="required">Expected Attendance</label>
-									<input class="form-control" id="attendance" type="number" min="1" placeholder="Estimated attendees" required>
+									<input class="form-control" id="attendance" name="attendance" type="number" min="1" placeholder="Estimated attendees" required>
 								</div>
 								<p><span class="required-asterisk">*</span> Required</p>
 								<button type="submit" class="btn btn-primary">Submit</button>
