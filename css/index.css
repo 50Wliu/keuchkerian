@@ -1,3 +1,13 @@
+.banner {
+	max-width: 80%;
+}
+
+@media (max-width: 768px) {
+	.banner {
+		margin: 1% 10%;
+	}
+}
+
 .content p {
 	margin-bottom: 2%;
 	font-size: 16px;
