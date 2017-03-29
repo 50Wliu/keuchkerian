@@ -1,10 +1,10 @@
-.welcome p {
+.content p {
 	margin-bottom: 2%;
 	display: inline-block;
 	font-size: 16px;
 }
 
-.welcome p:last-of-type {
+.content p:last-of-type {
 	margin-bottom: 0;
 }
 

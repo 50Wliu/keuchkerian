@@ -1,8 +1,8 @@
-.welcome p:nth-of-type(2n + 1) {
+.content p:nth-of-type(2n + 1) {
 	display: inline;
 }
 
-.welcome p:nth-of-type(2n) {
+.content p:nth-of-type(2n) {
 	display: none;
 	margin: 0;
 }
