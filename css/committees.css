@@ -45,16 +45,18 @@ h1:last-of-type {
 	margin-bottom: 0;
 }
 
-.consul {
-	width: 50%;
-}
+@media (min-width: 768px) {
+	.consul {
+		width: 50%;
+	}
 
-.consul-one {
-	float: left;
-	padding-right: 1%;
-}
+	.consul-one {
+		float: left;
+		padding-right: 1%;
+	}
 
-.consul-two {
-	float: right;
-	padding-left: 1%;
+	.consul-two {
+		float: right;
+		padding-left: 1%;
+	}
 }
