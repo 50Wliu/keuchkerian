@@ -46,16 +46,18 @@ h1:last-of-type {
 	margin-bottom: 20px;
 }
 
+.photo {
+	max-width: 140px;
+}
+
 .photo-left {
 	float: left;
 	padding-right: 10px;
-	width: auto;
 }
 
 .photo-right {
 	float: right;
 	padding-left: 10px;
-	width: auto;
 }
 
 .description {
