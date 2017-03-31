@@ -3,7 +3,7 @@ h1 {
 }
 
 h2:not(:first-child) {
-	margin-top: 40px; /* "Bypasses" margin collapsing on Committees header */
+	padding-top: 20px;
 }
 
 hr {
