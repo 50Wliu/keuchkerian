@@ -5,12 +5,12 @@ install:
     - nvm install node
     - gem install html-proofer
     - npm install -g eslint
-    # - npm install -g stylelint
+    - npm install -g stylelint
 
 script:
     - htmlproofer --check-html --check-favicon
     - eslint js/**
-    # - stylelint css/**
+    - stylelint css/**
 
 branches:
   only:

@@ -3,7 +3,7 @@ h3 {
 }
 
 .required::after {
-	content: " *";
+	content: ' *';
 	color: red;
 }
 
@@ -12,12 +12,12 @@ h3 {
 }
 
 .approved::after {
-	content: " \2714";
+	content: ' \2714';
 	color: green;
 }
 
 .rejected::after {
-	content: " \2718";
+	content: ' \2718';
 	color: red;
 }
 

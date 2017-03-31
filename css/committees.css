@@ -11,19 +11,19 @@ h1:last-of-type {
 	margin-left: 0;
 }
 
-.commitTEE:hover .explanation {
+.shirt {
 	display: inline;
-}
-
-.commitTEE:hover .shirt {
-	display: none;
+	margin-left: 0;
 }
 
 .shirt img {
 	width: 8%;
 }
 
-.shirt {
+.commitTEE:hover .explanation {
 	display: inline;
-	margin-left: 0;
+}
+
+.commitTEE:hover .shirt {
+	display: none;
 }

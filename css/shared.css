@@ -1,3 +1,7 @@
+a:hover, a:focus {
+	text-decoration: inherit;
+}
+
 .navbar {
 	position: sticky;
 	top: 0; /* "Hack" to make sticky work */
@@ -31,7 +35,7 @@
 }
 
 html, body {
-	background-image: url("../images/gloriousRunk.jpg");
+	background-image: url('../images/gloriousRunk.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
@@ -106,10 +110,6 @@ h3:first-of-type {
 
 hr {
 	border-color: #053319;
-}
-
-a:hover, a:focus {
-	text-decoration: inherit;
 }
 
 iframe {
