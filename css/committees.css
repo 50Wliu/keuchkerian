@@ -2,6 +2,10 @@ h1 {
 	display: inline-block;
 }
 
+h3 {
+	clear: both;
+}
+
 .explanation {
 	margin-left: 0;
 	display: none;
@@ -26,4 +30,22 @@ h1:last-of-type {
 
 .commitTEE:hover .shirt {
 	display: none;
+}
+
+.biography {
+	height: fit-content;
+}
+
+.consul {
+	width: 48%;
+}
+
+.consul-one {
+	float: left;
+	margin-right: 1%;
+}
+
+.consul-two {
+	float: right;
+	margin-left: 1%;
 }
