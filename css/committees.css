@@ -37,15 +37,15 @@ h1:last-of-type {
 }
 
 .consul {
-	width: 48%;
+	width: 50%;
 }
 
 .consul-one {
 	float: left;
-	margin-right: 1%;
+	padding-right: 1%;
 }
 
 .consul-two {
 	float: right;
-	margin-left: 1%;
+	padding-left: 1%;
 }
