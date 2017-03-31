@@ -32,10 +32,6 @@ h1:last-of-type {
 	display: none;
 }
 
-.biography {
-	height: fit-content;
-}
-
 .consul {
 	width: 50%;
 }
