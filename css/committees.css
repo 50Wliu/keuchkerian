@@ -2,7 +2,11 @@ h1 {
 	display: inline-block;
 }
 
-h3 {
+h2:not(:first-child) {
+	margin-top: 40px; /* "Bypasses" margin collapsing on Committees header */
+}
+
+hr {
 	clear: both;
 }
 
@@ -30,6 +34,15 @@ h1:last-of-type {
 
 .commitTEE:hover .shirt {
 	display: none;
+}
+
+.media {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.media p:last-of-type {
+	margin-bottom: 0;
 }
 
 .consul {
