@@ -6,6 +6,11 @@ h2:not(:first-child) {
 	padding-top: 20px;
 }
 
+h4 {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
 hr {
 	clear: both;
 }
@@ -36,12 +41,24 @@ h1:last-of-type {
 	display: none;
 }
 
-.media {
-	margin-top: 0;
+.biography:not(:last-of-type) {
+	overflow: hidden; /* Make the div include the image height */
 	margin-bottom: 20px;
 }
 
-.media p:last-of-type {
+.photo-left {
+	float: left;
+	padding-right: 10px;
+	width: auto;
+}
+
+.photo-right {
+	float: right;
+	padding-left: 10px;
+	width: auto;
+}
+
+.description {
 	margin-bottom: 0;
 }
 
