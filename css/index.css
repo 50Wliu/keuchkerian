@@ -17,7 +17,9 @@
 	margin-bottom: 0;
 }
 
-.carousel {
+#carousel-hss {
+    transition: opacity 1.5s ease;
 	visibility: hidden;
+	opacity: 0;
 	margin-bottom: 2%;
 }
