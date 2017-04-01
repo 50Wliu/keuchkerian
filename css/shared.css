@@ -34,7 +34,7 @@ a:hover, a:focus {
 	width: 5%;
 }
 
-html, body {
+body {
 	background-image: url('../images/gloriousRunk.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
