@@ -39,7 +39,6 @@ const ProposalSchema = new Schema({
 const ProposalModel = mongoose.model('ProposalModel', ProposalSchema);
 
 app.post('/test', (req, res, next) => {
-	console.log(req.body);
 	const proposal = new ProposalModel({
 		title: req.body.title,
 		planners: req.body.planners,
@@ -52,19 +51,14 @@ app.post('/test', (req, res, next) => {
 		attendance: req.body.attendance
 	});
 
-	console.log(proposal);
-
 	proposal.save((err) => {
 		if(err) {
 			console.log(err);
 			return next(err);
 		}
 
-		console.log('Hi!');
 		return res.redirect('proposals.html');
 	});
-
-	res.redirect('proposals.html');
 });
 
 app.listen(PORT, IP, () => {
