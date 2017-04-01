@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Delius+Unicase">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light">
 
+		<script src="https://apis.google.com/js/platform.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<script src="js/shared.js"></script>
@@ -60,6 +61,7 @@
 		</div>
 
 		<div class="content">
+			<button onclick="disconnect()">Disconnect</button>
 			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 				<div class="panel panel-default">
 					<div class="panel-heading" role="tab" id="submit">
@@ -71,48 +73,52 @@
 					</div>
 					<div id="collapseSubmit" class="panel-collapse collapse" role="tabpanel" aria-labelledby="submit">
 						<div class="panel-body">
-							<!-- Google Form -->
-							<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdcksRsQCEzzLJdCAkvQxnA2l-9m1YLpFpAKOjoS9PXqtiXUw/viewform?embedded=true">Loading...</iframe> -->
-							<form onsubmit="alert('Thank you for submitting your proposal. It will not be reviewed.');">
-								<div class="form-group">
-									<label for="event-title" class="required">Event Title</label>
-									<input class="form-control" id="event-title" name="title" autofocus required>
-								</div>
-								<div class="form-group">
-									<label for="planners" class="required">Persons/RAs/Committees Involved in Planning</label>
-									<input class="form-control" id="planners" name="planners" required>
-								</div>
-								<div class="form-group">
-									<label for="location">Location</label>
-									<input class="form-control" id="location" name="location" placeholder="Specify rainsite if applicable">
-								</div>
-								<div class="form-group">
-									<label for="date-time">Date and Time</label>
-									<input class="form-control" id="date-time" name="time" type="datetime-local">
-								</div>
-								<div class="form-group">
-									<label for="proposal-details" class="required">Proposal Details</label>
-									<input class="form-control" id="proposal-details" name="details" placeholder="General plan of activity" required>
-								</div>
-								<div class="form-group">
-									<label for="why-fund" class="required">Why should HSS fund your proposal? How does this fall within Hereford’s initiatives?</label>
-									<textarea class="form-control" id="why-fund" name="reason" required></textarea>
-								</div>
-								<div class="form-group">
-									<label for="amount-requesting" class="required">Amount Requesting</label>
-									<input class="form-control" id="amount-requesting" name="amount" placeholder="$ estimate" required>
-								</div>
-								<div class="form-group">
-									<label for="itemized-costs" class="required">Please Itemize Costs</label>
-									<textarea class="form-control" id="itemized-costs" name="costs" placeholder="Provide costs here" type="number" min="0" step="0.01" max="2500" required></textarea>
-								</div>
-								<div class="form-group">
-									<label for="attendance" class="required">Expected Attendance</label>
-									<input class="form-control" id="attendance" name="attendance" type="number" min="1" placeholder="Estimated attendees" required>
-								</div>
-								<p><span class="required-asterisk">*</span> Required</p>
-								<button type="submit" class="btn btn-primary">Submit</button>
-							</form>
+							<div id="signed-out">
+								<p>Please sign in with your UVa account first:</p>
+								<div class="g-signin2" data-onsuccess="onSignIn"></div>
+							</div>
+							<div id="signed-in">
+								<form onsubmit="alert('Thank you for submitting your proposal. It will not be reviewed.');">
+									<div class="form-group">
+										<label for="event-title" class="required">Event Title</label>
+										<input class="form-control" id="event-title" name="title" autofocus required>
+									</div>
+									<div class="form-group">
+										<label for="planners" class="required">Persons/RAs/Committees Involved in Planning</label>
+										<input class="form-control" id="planners" name="planners" required>
+									</div>
+									<div class="form-group">
+										<label for="location">Location</label>
+										<input class="form-control" id="location" name="location" placeholder="Specify rainsite if applicable">
+									</div>
+									<div class="form-group">
+										<label for="date-time">Date and Time</label>
+										<input class="form-control" id="date-time" name="time" type="datetime-local">
+									</div>
+									<div class="form-group">
+										<label for="proposal-details" class="required">Proposal Details</label>
+										<input class="form-control" id="proposal-details" name="details" placeholder="General plan of activity" required>
+									</div>
+									<div class="form-group">
+										<label for="why-fund" class="required">Why should HSS fund your proposal? How does this fall within Hereford’s initiatives?</label>
+										<textarea class="form-control" id="why-fund" name="reason" required></textarea>
+									</div>
+									<div class="form-group">
+										<label for="amount-requesting" class="required">Amount Requesting</label>
+										<input class="form-control" id="amount-requesting" name="amount" placeholder="$ estimate" required>
+									</div>
+									<div class="form-group">
+										<label for="itemized-costs" class="required">Please Itemize Costs</label>
+										<textarea class="form-control" id="itemized-costs" name="costs" placeholder="Provide costs here" type="number" min="0" step="0.01" max="2500" required></textarea>
+									</div>
+									<div class="form-group">
+										<label for="attendance" class="required">Expected Attendance</label>
+										<input class="form-control" id="attendance" name="attendance" type="number" min="1" placeholder="Estimated attendees" required>
+									</div>
+									<p><span class="required-asterisk">*</span> Required</p>
+									<button type="submit" class="btn btn-primary">Submit</button>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>

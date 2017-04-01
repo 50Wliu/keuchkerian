@@ -2,6 +2,10 @@ h3 {
 	margin-bottom: 0;
 }
 
+#signed-in {
+	display: none;
+}
+
 .required::after {
 	content: ' *';
 	color: red;

@@ -1,0 +1,29 @@
+{
+	"name": "keuchkerian",
+	"version": "0.0.0",
+	"description": "A redesigned website for the Hereford Student Senate",
+	"main": "server.js",
+	"repository": "https://github.com/50Wliu/keuchkerian",
+	"license": "MIT",
+	"contributors": [
+		"Winston Liu <wl4ej@virginia.edu>",
+		"Renée Mitchell <rlm4mx@virginia.edu>",
+		"Austin Sullivan <acs3ss@virginia.edu>"
+	],
+	"scripts": {
+		"start-dev": "set DEBUG=keuchkerian:* && nodemon server.js"
+	},
+	"dependencies": {
+		"async": "^0.2.8",
+		"body-parser": "^1.17.1",
+		"debug": "^2.6.3",
+		"express": "^3.2.4",
+		"express-validator": "^3.1.2",
+		"mongoose": "^4.9.2",
+		"morgan": "^1.8.1",
+		"socket.io": "^0.9.14"
+	},
+	"devDependencies": {
+		"nodemon": "^1.11.0"
+	}
+}
