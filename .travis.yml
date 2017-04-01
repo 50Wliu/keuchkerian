@@ -8,7 +8,7 @@ install:
     - npm install -g stylelint
 
 script:
-    - htmlproofer --check-html --check-favicon
+    - htmlproofer --check-html --check-favicon --enforce-https
     - eslint js/**
     - stylelint css/**
 
