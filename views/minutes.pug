@@ -1,1 +1,31 @@
 extends layout.pug
+
+block about
+	p Meeting stuff.
+
+block content
+	div#accordion.panel-group(role='tablist' aria-multiselectable='true')
+		div.panel.panel-default
+			div#headingOne.panel-heading(role='tab')
+				h4.panel-title
+					a.collapsed(role='button' data-toggle='collapse' data-parent='accordion' href='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
+						h3 Minutes 2/26/2017
+			div#collapseOne.panel-collapse.collapse(role='tabpanel' aria-labelledby='headingOne')
+				div.panel-body
+					iframe(src='https://docs.google.com/document/d/12FE3pmo1bxg02M87TCbSEwInMSyvm823xP5iWg9075U/pub?embedded=true')
+		div.panel.panel-default
+			div#headingTwo.panel-heading(role='tab')
+				h4.panel-title
+					a.collapsed(role='button' data-toggle='collapse' data-parent='accordion' href='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+						h3 Minutes 3/19/2017
+			div#collapseTwo.panel-collapse.collapse(role='tabpanel' aria-labelledby='headingTwo')
+				div.panel-body
+					p Perrin needs to put his files in the shared folder
+		div.panel.panel-default
+			div#headingThree.panel-heading(role='tab')
+				h4.panel-title
+					a.collapsed(role='button' data-toggle='collapse' data-parent='accordion' href='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+						h3 Minutes 3/12/2017
+			div#collapseThree.panel-collapse.collapse(role='tabpanel' aria-labelledby='headingThree')
+				div.panel-body
+					p And can we have the collapsing panels automate as we add more?
