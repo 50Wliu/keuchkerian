@@ -1,5 +1,8 @@
 extends layout.pug
 
+mixin email(email)
+	p Email: #[a(href=`mailto:${email}` target='_blank' rel='noopener noreferrer') #{email}]
+
 block title
 	div.commitTEE.title
 		h1 Senate Comit
@@ -25,7 +28,7 @@ block content
 	div.biography.consul.consul-one
 		img.photo.photo-left(src='https://hereford.virginia.edu/sites/hereford.virginia.edu/files/styles/people_image/public/images/HSS%20portrait.jpg?itok=ZayfgDSZ' alt='Evan Sheldahl')
 		h4 Evan Sheldahl
-		p Email: #[a(href='mailto:ees3ht@virginia.edu') ees3ht@virginia.edu]
+		+email('ees3ht@virginia.edu')
 		p.description.
 			Evan is a third year in the College pursuing a major in Astrophysics.
 			He also plays clarinet in the marching band at UVA.
@@ -37,7 +40,7 @@ block content
 	div.biography.consul.consul-two
 		img.photo.photo-right(src='https://hereford.virginia.edu/sites/hereford.virginia.edu/files/styles/people_image/public/images/10295710_1219846978030716_6789209470681313002_n.jpg?itok=E8hK-dht' alt='Monica Kuo')
 		h4 Monica Kuo
-		p Email: #[a(href='mailto:mdk6jd@virginia.edu') mdk6jd@virginia.edu]
+		+email('mdk6jd@virginia.edu')
 		p.description.
 			Monica is a third year student in the College of Arts and Sciences.
 			She is a prospective medical student and computer science major.
@@ -58,7 +61,7 @@ block content
 	div.biography
 		img.photo.photo-left(src='https://hereford.virginia.edu/sites/hereford.virginia.edu/files/styles/people_image/public/images/UVA%20student%20ID%20pic.jpg?itok=6hVTdF6S' alt='Mohamed Ihsan')
 		h4 Mohamed Ihsan
-		p Email: #[a(href='mailto:mai5hh@virginia.edu') mai5hh@virginia.edu]
+		+email('mai5hh@virginia.edu')
 		p.description.
 			Mohamed (or Momo!) is a second year hoping to major in Computer Engineering.
 			He likes food, nature walking, cartography, Legend of Zelda, Star Wars and being social, among other things.
@@ -77,7 +80,7 @@ block content
 	div.biography
 		img.photo.photo-left(src='https://hereford.virginia.edu/sites/hereford.virginia.edu/files/styles/people_image/public/images/image1.PNG?itok=cpcnYeNO' alt='Maurice Wong')
 		h4 Maurice Wong
-		p Email: #[a(href='mailto:mzw7af@virginia.edu') mzw7af@virginia.edu]
+		+email('mzw7af@virginia.edu')
 		p.description.
 			Maurice is a third year majoring in computer science and minoring in applied math.
 			When his head isn't buried in a textbook, he enjoys reading, binge-watching Netflix, and consuming copious amounts of coffee.
@@ -93,7 +96,7 @@ block content
 	div.biography
 		img.photo.photo-left(src='https://hereford.virginia.edu/sites/hereford.virginia.edu/files/styles/people_image/public/images/HSS%20portrait.jpg?itok=ZayfgDSZ' alt='Alex Chmielinski')
 		h4 Alex Chmielinski
-		p Email: #[a(href='mailto:ac3dm@virginia.edu') ac3dm@virginia.edu]
+		+email('ac3dm@virginia.edu')
 		p.description.
 			Cats secretly make all the worlds muffins kitty! kitty!,
 			scream for no reason at 4 am and missing until dinner time, for eats owners hair then claws head.
@@ -118,7 +121,7 @@ block content
 	div.biography
 		img.photo.photo-left(src='https://hereford.virginia.edu/sites/hereford.virginia.edu/files/styles/people_image/public/images/13900984_10205802850945075_1755882371_n.jpg?itok=yuL4KRYi' alt='Perrin Arnold')
 		h4 Perrin Arnold
-		p Email: #[a(href='mailto:paa4tp@virginia.edu') paa4tp@virginia.edu]
+		+email('paa4tp@virginia.edu')
 		p.description.
 			Perrin is a fourth year studying Archaeology and Biology.
 			While he is involved in other activities and clubs such as the Washington Literary Society and Debating Union
@@ -137,7 +140,7 @@ block content
 	div.biography
 		img.photo.photo-left(src='https://hereford.virginia.edu/sites/hereford.virginia.edu/files/styles/people_image/public/images/HSS%20portrait.jpg?itok=ZayfgDSZ' alt='Peter Marr')
 		h4 Peter Marr
-		p Email: #[a(href='mailto:pm7qr@virginia.edu') pm7qr@virginia.edu]
+		+email('pm7qr@virginia.edu')
 		p.description.
 			Dragée liquorice liquorice dessert chocolate bar. Wafer dessert jelly chocolate cake sweet biscuit biscuit macaroon caramels.
 			Cotton candy tootsie roll marshmallow chocolate cake bear claw sesame snaps soufflé. Gummies oat cake cake cupcake.
@@ -152,7 +155,7 @@ block content
 	div.biography
 		img.photo.photo-left(src='https://hereford.virginia.edu/sites/hereford.virginia.edu/files/styles/people_image/public/images/HSS%20portrait.jpg?itok=ZayfgDSZ' alt='Ruth Morgan')
 		h4 Ruth Morgan
-		p Email: #[a(href='mailto:rlm2dh@virginia.edu') rlm2dh@virginia.edu]
+		+email('rlm2dh@virginia.edu')
 		p.description.
 			heddar babybel cut the cheese. Cheese strings mozzarella cottage cheese hard cheese gouda cheeseburger ricotta cheesy feet.
 			Blue castello goat goat squirty cheese caerphilly cauliflower cheese stilton blue castello.
@@ -168,7 +171,7 @@ block content
 	div.biography
 		img.photo.photo-left(src='https://hereford.virginia.edu/sites/hereford.virginia.edu/files/styles/people_image/public/images/HSS%20portrait.jpg?itok=ZayfgDSZ' alt='Joe Leonard')
 		h4 Joe Leonard
-		p Email: #[a(href='jl2vt@virginia.edu') jl2vt@virginia.edu]
+		+email('jl2vt@virginia.edu')
 		p.description.
 			Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale.
 			Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.
@@ -185,7 +188,7 @@ block content
 	div.biography
 		img.photo.photo-left(src='https://hereford.virginia.edu/sites/hereford.virginia.edu/files/styles/people_image/public/images/HSS%20portrait.jpg?itok=ZayfgDSZ' alt='Emily Yates')
 		h4 Emily Yates
-		p Email: #[a(href='mailto:ely2ye@virginia.edu') ely2ye@virginia.edu]
+		+email('ely2ye@virginia.edu')
 		p.description.
 			Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro.
 			De carne lumbering animata corpora quaeritis.
