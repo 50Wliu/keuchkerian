@@ -23,14 +23,15 @@ db.on('error', (err) => {
 	console.error(`MongoDB connection error: ${err}`);
 });
 
-app.get('/test', (req, res) => {
-	let title;
-	if(req.path === '/index') {
+app.get(/.*/, (req, res) => {
+	const file = req.path.substr(1).replace('.html', ''); // Remove the leading slash and the .html extension
+	let title = file;
+	if(title === 'index') {
 		title = '';
 	} else {
-		title = `: ${req.path.slice(1).charAt(0).toUpperCase() + req.path.slice(2)}`;
+		title = title.charAt(0).toUpperCase() + title.slice(1);
 	}
-	res.render('index', {title: title, file: req.path.slice(1)});
+	res.render(file, {title, file});
 });
 
 // Define schema
