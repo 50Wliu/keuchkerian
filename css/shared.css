@@ -13,7 +13,7 @@ a:hover, a:focus {
 	color: #496149;
 }
 
-.navbar-default .navbar-brand:hover {
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
 	color: #304830;
 }
 
@@ -21,7 +21,15 @@ a:hover, a:focus {
 	color: #496149;
 }
 
-.navbar-default .navbar-nav > li > a:hover {
+.navbar-default .navbar-nav > .active > a {
+	color: #304830;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #304830;
+}
+
+.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color: #304830;
 }
 
