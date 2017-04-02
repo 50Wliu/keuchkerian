@@ -1,7 +1,62 @@
 extends layout.pug
 
+block title
+	img.title.banner(src='images/banner.png' alt='Hereford Banner')
+
 block about
-	p About
+	p Welcome to the Hereford Student Senate!
 
 block content
-	p Content
+	p.
+		#[span.tab]
+		The Hereford Student Senate (HSS) is a body of student representatives that serves the Hereford Community.
+		Consisting of two consuls, an executive board, and senators from each building,
+		the Senate oversees the disbursement of the $20,000 budget consisting of student activities funds for enrichment programs,
+		community-building activities, and improvements at the college.
+		The Senate is the primary voice of Hereford students within the residential college as well as the larger University,
+		helping to shape the direction of Hereford.
+		The Senate also serves as a liaison between Hereford and the other residential colleges at U.Va. to plan joint activities.
+
+	div#carousel-hss.carousel.slide
+		// Indicators
+		ol.carousel-indicators
+			li.active(data-target='#carousel-hss' data-slide-to='0')
+			li(data=target='#carousel-hss' data-slide-to='1')
+			li(data=target='#carousel-hss' data-slide-to='2')
+			li(data=target='#carousel-hss' data-slide-to='3')
+		
+		// Wrapper for slides
+		div.carousel-inner(role='listbox')
+			div.item.active
+				img(src='images/photoFun.jpg' alt='group photo')
+			div.item
+				img(src='images/welcomePic2.jpg' alt='rotunda dinner')
+			div.item
+				img(src='images/welcomePic3.jpg' alt='rotunda dinner')
+			div.item
+				img(src='images/welcomePic4.jpg' alt='harry potter party')
+		
+		// Controls
+		a.left.carousel-control(href='#carousel-hss' role='button' data-slide='prev')
+			span.glphyicon.glyphicon-chevron-left(aria-hidden='true')
+			span.sr-only Previous
+		a.right.carousel-control(href='#carousel-hss' role='button' data-slide='next')
+			span.glphyicon.glyphicon-chevron-right(aria-hidden='true')
+			span.sr-only Next
+
+	p.
+		#[span.tab]
+		The Senate meets every Sunday from 8 to 9pm in the Hereford Hub.
+		Meetings are open to the Hereford community and all Herefordians are encouraged to attend.
+		If you have an idea or know of a need around Hereford, please attend a meeting!
+		Elections to HSS occur at the beginning of the Fall and Spring semester and at the conclusion of the academic year.
+
+	p.
+		#[span.tab]
+		If you have an idea and would like to bring it to the Hereford Student Senate,
+		please feel free to get in touch with the appropriate committee chair.
+		Descriptions of each committee can be found on the #[a(href='committees.html') Committees] page.
+		If you are not sure which committee chair to approach,
+		just contact the HSS consuls,
+		#[a(href='mailto:mdk6jd@virginia.edu') Monica Kuo] or
+		#[a(href='mailto:ees3ht@virginia.edu') Evan Sheldahl].
