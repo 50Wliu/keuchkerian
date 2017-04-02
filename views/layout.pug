@@ -30,15 +30,15 @@ html
 
 				div#navbar.collapse.navbar-collapse
 					ul.nav.navbar-nav
-						li
+						li(class=file === 'events' ? 'active' : '')
 							a(href='events.html') Events
-						li
+						li(class=file === 'committees' ? 'active' : '')
 							a(href='committees.html') Committees
-						li
+						li(class=file === 'senators' ? 'active' : '')
 							a(href='senators.html') Senators
-						li
+						li(class=file === 'proposals' ? 'active' : '')
 							a(href='proposals.html') Proposals
-						li
+						li(class=file === 'minutes' ? 'active' : '')
 							a(href='minutes.html') Minutes
 					div.navbar-right.navbar-text
 						p#pun
