@@ -5,6 +5,10 @@ const expressValidator = require('express-validator');
 const mongoose = require('mongoose');
 
 const app = express();
+
+app.set('views', 'views');
+app.set('view engine', 'pug');
+
 app.use(logger('dev'));
 app.use(express.static('public/'));
 app.use(bodyParser.urlencoded({extended: true}));
@@ -13,11 +17,20 @@ app.use(expressValidator());
 const IP = process.env.IP || '127.0.0.1';
 const PORT = process.env.PORT || 8000;
 
-// mongoose.connect(IP, 'my_database', PORT);
-mongoose.connect('mongodb://localhost/keuchkerian');
+mongoose.connect(IP, 'keuchkerian');
 const db = mongoose.connection;
 db.on('error', (err) => {
-	console.log(`MongoDB connection error: ${err}`);
+	console.error(`MongoDB connection error: ${err}`);
+});
+
+app.get('/test', (req, res) => {
+	let title;
+	if(req.path === '/index') {
+		title = '';
+	} else {
+		title = `: ${req.path.slice(1).charAt(0).toUpperCase() + req.path.slice(2)}`;
+	}
+	res.render('index', {title: title, file: req.path.slice(1)});
 });
 
 // Define schema
