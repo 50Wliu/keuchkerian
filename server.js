@@ -24,7 +24,7 @@ db.on('error', (err) => {
 });
 
 app.get(/.*/, (req, res) => {
-	const file = req.path.substr(1).replace('.html', ''); // Remove the leading slash and the .html extension
+	const file = req.path.substr(1) || 'index'; // Remove the leading slash and default to index
 	let title = file;
 	if(title === 'index') {
 		title = '';
