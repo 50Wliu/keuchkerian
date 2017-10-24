@@ -2,3 +2,22 @@ extends layout.pug
 
 block scripts
 	script(src='https://apis.google.com/js/platform.js')
+
+block about
+	p Yo. Submit stuff.
+
+block content
+	button(onclick="disconnect()") Disconnect
+	div#accordion.panel-group(role='tablist' aria-multiselectable='true')
+		div.panel.panel-default
+			div#submit.panel-heading(role='tab')
+				h4.panel-title
+					a.collapsed(role='button' data-toggle='collapse' data-parent='#accordion' href='#collapseSubmit' aria-expanded='false' aria-control='collapseSubmit')
+						h3 Submit a Proposal
+				div#collapseSubmit.panel-collapse.collapse(role='tabpanel' aria-labelledby='submit')
+					div.panel-body
+						if error
+							p= error
+							div.g-signin2(data-onsuccess='onSignIn')
+						else
+							p Signed in!

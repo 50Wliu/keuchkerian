@@ -47,8 +47,10 @@ gapi.load('auth2', function() {
 // eslint-disable-next-line no-unused-vars
 function onSignIn(googleUser) {
 	if(googleUser.getHostedDomain() === 'virginia.edu') {
-		document.getElementById('signed-out').style.display = 'none';
-		document.getElementById('signed-in').style.display = 'inherit';
+		const xhr = new XMLHttpRequest();
+		xhr.open('POST', 'http://localhost:8000/tokensignin');
+		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+		xhr.send(`idtoken=${googleUser.getAuthResponse().id_token}`);
 	}
 }
 

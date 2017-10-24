@@ -104,7 +104,6 @@ rules:
     no-multi-str: error
     no-multiple-empty-lines: error
     no-native-reassign: error
-    no-negated-condition: error
     no-negated-in-lhs: error
     no-nested-ternary: error
     no-new: error
@@ -151,7 +150,6 @@ rules:
     no-useless-return: error
     no-var: warn
     no-void: error
-    no-warning-comments: error
     no-whitespace-before-property: error
     no-with: error
     nonblock-statement-body-position: error
